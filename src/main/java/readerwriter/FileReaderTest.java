@@ -3,7 +3,6 @@ package readerwriter;
 import org.apache.commons.io.IOUtils;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.nio.CharBuffer;
 
