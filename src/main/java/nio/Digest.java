@@ -12,15 +12,11 @@ import java.io.FileInputStream;
 public class Digest {
 
     public static void main(String[] args) {
-        FileInputStream inputStream = null;
-        try {
-            inputStream = new FileInputStream(new File("d:/test.txt"));
+        try (FileInputStream inputStream = new FileInputStream(new File("d:/test.txt"))){
             String md5Hex = DigestUtils.md5Hex(inputStream);
             System.out.println(md5Hex);
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            IOUtils.closeQuietly(inputStream);
         }
     }
 }

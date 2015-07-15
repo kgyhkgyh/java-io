@@ -6,7 +6,7 @@ package nio;
 public class MappedBufferTest {
 
     public static void main(String[] args) {
-        new file
+
     }
 
 }
